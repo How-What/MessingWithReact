@@ -14,11 +14,8 @@ function App() {
         <Router>
           <Nav/>
         </Router>
-
-        <Counter/>
-
-        
       </header>
+      <Counter/>
     </div>
    
     

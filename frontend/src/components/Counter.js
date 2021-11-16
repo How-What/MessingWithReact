@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Apipull from "./ApiPull";
 
 function Counter(){
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     useEffect(() => {
         document.getElementById("counter").innerHTML = `You Clicked ${count} times`;
@@ -18,7 +18,10 @@ function Counter(){
             <div id = "counter">
 
             </div>
-            <Apipull count={count}/>
+            <div className="returnedapi">
+                <Apipull count={count}/>
+            </div>
+            
         </div>
         
     )    ;
